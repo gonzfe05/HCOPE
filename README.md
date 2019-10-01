@@ -6,9 +6,9 @@ Based on Thomas et al. High Confidence Off-Policy Evaluation. It uses concentrat
 
 ## Structure
 
-This repo was implemented as a test to compare the gains in speed when shifting from python (mpeb_python.py) to cython (mpeb_c.pyx), which resulted in a **35x** faster run.
-The file test_bounds.py will run both implementations on a simulated exponential, time the difference and plot the result from the cython implementation.
-Regarding the implementations, they can be used with, they can be used with a call to **generate_bounds**, it takes in the sample and a confidence level, and will output the *X_post* (sample used to compute the bounds), *lower_bound* (90% confidence x), *bounds* (list of x values), *confidences* (confidence level of each x in bounds).
+This repo was implemented as a test to compare the gains in speed when shifting from python (*mpeb_python.py*) to cython (*mpeb_c.pyx*), which resulted in a **35x** faster run.
+The file *test_bounds.py* will run both implementations on a simulated exponential, print the elapsed time and plot the result from the cython implementation.
+Regarding the implementations, they can be used with a call to **generate_bounds**, it takes in the sample and a confidence level, and will output the *X_post* (sample used to compute the bounds), *lower_bound* (90% confidence x), *bounds* (list of x values), *confidences* (confidence level of each x in bounds).
 
 ## Compiling
 
